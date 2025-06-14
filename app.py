@@ -2,6 +2,7 @@ from flask import Flask, request, redirect, Response
 from scrape import scrape_and_group_by_price
 import stripe
 import math
+import os
 
 app = Flask(__name__)
 stripe.api_key = "pk_live_51QktmBKIz3f1Y2XMgQRdYnFUSaw4V8m3RLuNRh8ZzRblq5yLY06AU2MjINw1pjYGQieud9TNrilmzHxfYIWuW3on00uzEjow9H"
